@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0%;
+    }
+
+    .main-container{
+        width: 1400px;
+        height: 100vh;
+        background:rgb(0, 0, 0 ,0.5) url(https://cdn.pixabay.com/photo/2016/11/22/19/17/buildings-1850129__340.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-blend-mode: darken;
+    }
+    .container form{
+        width: 300px;
+        height: 300px;
+        border: none;
+        border-radius: 12px;
+        background-color:rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        padding: 20px ;
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .container form h2{
+        color: white;
+        margin: 10px 0 30px 100px;
+    }
+    .container form label{
+        font-size: 17px;
+        color: white;
+        font-weight: 600;
+
+    }
+
+    .container form input{
+        width: 100%;
+        padding: 5px 0 0 3px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+        background: none;
+        margin: 0 0 20px 0;
+        font-size: 17px;
+    }
+    .container form button{
+        background: none;
+        border: 2px solid white;
+        padding: 10px 10px;
+        color: white;
+        border-radius: 10px;
+        margin-left: 90px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="main-container">
+    <div class="container">
+            <form action="#">
+                <h2>login</h2>
+                <label for="username">UserName</label>
+                <input type="text" id="username">
+                <label for="username">Password</label>
+                <input type="password" id="password">
+                <button>Log in</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
